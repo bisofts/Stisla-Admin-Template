@@ -1,0 +1,144 @@
+body {
+  background-color: #f9f9f9;
+}
+
+p {
+  margin-top: 20px;
+}
+
+.alert p {
+  margin-top: 0;
+}
+
+section p:first-child {
+  margin-top: 0;
+}
+
+.preview {
+  background-color: #eee;
+  padding: 30px;
+  border-radius: 3px;
+}
+
+pre + .preview {
+  margin-top: -6px;
+  border-radius: 0 0 3px 3px;
+}
+
+.section-title {
+  font-size: 16px;
+  margin-top: 20px;
+}
+section .section-title:first-child {
+  margin-top: 0;
+}
+
+.line {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #f2f2f2;
+  margin: 20px 0;
+}
+
+.jumbotron {
+  border-radius: 0;
+  height: 440px;
+  padding: 0;
+  background-image: linear-gradient(to right, #6777ef, #9760f0);
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron .lead {
+  opacity: .6;
+}
+
+.jumbotron .cta {
+  margin-top: 35px;
+}
+
+.jumbotron .btn-cta {
+  background-color: #fff;
+  color: #6777ef;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+  border: 2px solid transparent;
+}
+
+.jumbotron .btn-cta:hover {
+  background-color: transparent;
+  box-shadow: none;
+  border-color: #fff;
+  color: #fff;
+}
+
+.container-fluid {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.docs-nav {
+  z-index: 9999;
+}
+.docs-nav.card-body {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.docs-nav .nav-item .nav-link {
+  color: #34395e;
+}
+.docs-nav .nav-header {
+  padding: 3px 20px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.docs-nav li a i {
+  width: 10px;
+  text-align: right;
+  margin-right: 15px !important;
+}
+
+.docs-toggle {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .docs-nav {
+    display: none;
+    position: fixed;
+    top: 10px;
+    bottom: 30px;
+    right: 10px;
+    max-height: 100%;
+    height: calc(100% - 80px);
+    z-index: 99;
+    width: 200px;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .jumbotron {
+    height: 1;
+    text-align: center;
+  }
+}
