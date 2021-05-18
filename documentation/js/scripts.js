@@ -17,12 +17,12 @@ $('#toggle-modal-1').fireModal({
 });
 $.chatCtrl('#mychatbox', {
   text: 'Halo',
-  picture: '../dist/img/avatar/avatar-1.png'
+  picture: 'dist/img/avatar/avatar-1.png'
 });
 $("#chat-form").submit(function() {
   var me = $(this),
       this_text = me.find('input').val(),
-      this_picture = '../dist/img/avatar/avatar-1.png';
+      this_picture = 'dist/img/avatar/avatar-1.png';
 
   me.find('input').val('');
   $.chatCtrl("#mychatbox-1", {
